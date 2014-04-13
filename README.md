@@ -13,13 +13,16 @@ presentation, similar to hc2-diplomas.
 ## hc2-diplomas
 
 Contains the python script for generating the diplomas from the output file csvs
-of our backend and a svg template. Converts to pdf and prepares a mail-merge
+of our backend and a svg template. We typically just copy-paste the HTML table 
+from the backend into a CSV file. Converts to pdf and prepares a mail-merge
 csv for sending out the diplomas via the following Thunderbird plugin:
 
 https://addons.mozilla.org/en-us/thunderbird/addon/mail-merge/ 
 
 Dependencies:
 python, rsvg
+
+
 
 ## santa-diplomas
 
