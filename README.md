@@ -3,6 +3,13 @@ diverse-scripts
 
 Scripts for generating diplomas, slides etc.
 
+## hc2-ceremony
+
+Contains an outdated Microsoft Powerpoint macro for generating slides for the
+final ceremony of HC2. We wholeheartedly recommend to switch to a python
+script that generates (a) pdf(s) that can be merged with the rest of the 
+presentation, similar to hc2-diplomas.
+
 ## hc2-diplomas
 
 Contains the python script for generating the diplomas from the output file csvs
