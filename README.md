@@ -10,3 +10,11 @@ of our backend and a svg template. Converts to pdf and prepares a mail-merge
 csv for sending out the diplomas via the following Thunderbird plugin:
 
 https://addons.mozilla.org/en-us/thunderbird/addon/mail-merge/ 
+
+Dependencies:
+python, rsvg
+
+# santa-diplomas
+
+Similar as hc2-diplomas, but does not contain the mail merge functionality yet.
+Feel free to port it :).
