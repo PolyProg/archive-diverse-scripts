@@ -50,8 +50,9 @@ def create_slides(scores, max_rank):
     #os.system('rsvg-convert -f pdf -o "out/'+filename+'.pdf" "out/'+filename+'.svg"')
     print 'inkscape out/'+filename+'.svg --export-pdf=out/'+filename+'.pdf'
     os.system('inkscape out/'+filename+'.svg --export-pdf=out/'+filename+'.pdf')
+    os.system('convert -density 200x200 -quality 60 -compress jpeg out/'+filename+'.pdf out/'+filename+'_small.pdf')
     
-    pdfnames.append('out/'+filename+'.pdf')
+    pdfnames.append('out/'+filename+'_small.pdf')
   
     # remove svg
     # os.system('rm out/'+filename+'.svg')
