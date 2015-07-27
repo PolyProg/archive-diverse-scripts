@@ -1,0 +1,1 @@
+time python polygon2domjudge.py --solutions --latex --unzip --checkers
