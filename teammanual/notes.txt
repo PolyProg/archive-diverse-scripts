@@ -1,0 +1,3 @@
+std::ios::sync_with_stdio(false);
+
+http://acm.timus.ru/help.aspx?topic=java
