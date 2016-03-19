@@ -12,7 +12,7 @@ for i in `seq -w 1 100`; do echo >> .temp/empty.txt; done
 USER="todo"
 PASSWORD="todo"
 
-wget "http://hc2.ch/admin/outputraw.php?pwd&username=$USER&$PASSWORD=TODO" -O .temp/cont.txt
+wget "http://hc2.ch/admin/outputraw.php?pwd&username=$USER&password=$PASSWORD" -O .temp/cont.txt
 sed -i "s/\\\\/\\\\\\\\/g" .temp/cont.txt
 
 cat .temp/cont.txt .temp/empty.txt | (
