@@ -8,7 +8,11 @@ mkdir .temp
 
 for i in `seq -w 1 100`; do echo >> .temp/empty.txt; done
 
-wget "http://hc2.ch/admin/outputraw.php?pwd&username=bot&password=5qi2pxumrj6ab98f" -O .temp/cont.txt
+# Important: make sure you insert a valid username and password for hc2.ch/admin
+USER="todo"
+PASSWORD="todo"
+
+wget "http://hc2.ch/admin/outputraw.php?pwd&username=$USER&$PASSWORD=TODO" -O .temp/cont.txt
 sed -i "s/\\\\/\\\\\\\\/g" .temp/cont.txt
 
 cat .temp/cont.txt .temp/empty.txt | (
